@@ -1,0 +1,40 @@
+{
+  "$schema": "https://apify.com/schemas/v1/actor.ide.json",
+  "actorSpecification": 1,
+  "name": "mawsool-linkedin-company-firmographics",
+  "title": "LinkedIn Firmographics and Company Website",
+  "description": "LinkedIn firmographics and company website from a company URL. Returns the website, industry, employee range, headquarters, founded year, followers, and specialties. One charge per company, Starting from $0.45 per 1,000. No LinkedIn login and no cookies.",
+  "seoTitle": "LinkedIn Company Firmographics from a URL",
+  "seoDescription": "Starting from $0.45 per 1,000. LinkedIn firmographics from a company URL: website, industry, employee range, headquarters, founded year, and followers.",
+  "categories": [
+    "LEAD_GENERATION",
+    "SOCIAL_MEDIA",
+    "AUTOMATION"
+  ],
+  "version": "1.0",
+  "buildTag": "latest",
+  "minMemoryMbytes": 256,
+  "maxMemoryMbytes": 1024,
+  "defaultRunOptions": {
+    "build": "latest",
+    "timeoutSecs": 21600,
+    "memoryMbytes": 256
+  },
+  "environmentVariables": {
+    "ACTOR_SLICE": "firmographics",
+    "CHARGE_EVENT": "company-firmographics",
+    "COMPANY_API_BASE_URL": "http://company-lockup.34.166.92.24.sslip.io",
+    "COMPANY_API_KEY": "@mawsoolCompanyApiKey"
+  },
+  "meta": {
+    "templateId": "ts-empty",
+    "generatedBy": "Cursor Agent"
+  },
+  "input": "./input_schema.json",
+  "output": "./output_schema.json",
+  "storages": {
+    "dataset": "./dataset_schema.json"
+  },
+  "pricing": "./pay_per_event.json",
+  "dockerfile": "../Dockerfile"
+}

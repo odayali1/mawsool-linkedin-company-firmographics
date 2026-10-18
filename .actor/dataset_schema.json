@@ -1,0 +1,148 @@
+{
+  "actorSpecification": 1,
+  "title": "LinkedIn Company Website and Firmographics",
+  "description": "One company per charge. Firmographics are one row.",
+  "fields": {
+    "type": "object",
+    "properties": {
+      "inputUrl": {
+        "type": [
+          "string",
+          "null"
+        ],
+        "title": "inputUrl"
+      },
+      "companyName": {
+        "type": [
+          "string",
+          "null"
+        ],
+        "title": "companyName"
+      },
+      "website": {
+        "type": [
+          "string",
+          "null"
+        ],
+        "title": "website"
+      },
+      "industry": {
+        "type": [
+          "string",
+          "null"
+        ],
+        "title": "industry"
+      },
+      "companySize": {
+        "type": [
+          "string",
+          "null"
+        ],
+        "title": "companySize"
+      },
+      "companySizeMin": {
+        "type": [
+          "integer",
+          "null"
+        ],
+        "title": "companySizeMin"
+      },
+      "companySizeMax": {
+        "type": [
+          "integer",
+          "null"
+        ],
+        "title": "companySizeMax"
+      },
+      "employeesOnLinkedIn": {
+        "type": [
+          "integer",
+          "null"
+        ],
+        "title": "employeesOnLinkedIn"
+      },
+      "headquarters": {
+        "type": [
+          "string",
+          "null"
+        ],
+        "title": "headquarters"
+      },
+      "city": {
+        "type": [
+          "string",
+          "null"
+        ],
+        "title": "city"
+      },
+      "countryCode": {
+        "type": [
+          "string",
+          "null"
+        ],
+        "title": "countryCode"
+      },
+      "organizationType": {
+        "type": [
+          "string",
+          "null"
+        ],
+        "title": "organizationType"
+      },
+      "founded": {
+        "type": [
+          "integer",
+          "null"
+        ],
+        "title": "founded"
+      },
+      "followers": {
+        "type": [
+          "integer",
+          "null"
+        ],
+        "title": "followers"
+      },
+      "specialties": {
+        "type": [
+          "string",
+          "null"
+        ],
+        "title": "specialties"
+      },
+      "success": {
+        "type": "boolean",
+        "title": "success"
+      }
+    }
+  },
+  "views": {
+    "flat": {
+      "title": "Flat results",
+      "transformation": {
+        "fields": [
+          "inputUrl",
+          "companyName",
+          "website",
+          "industry",
+          "companySize",
+          "companySizeMin",
+          "companySizeMax",
+          "employeesOnLinkedIn",
+          "headquarters",
+          "city",
+          "countryCode",
+          "organizationType",
+          "founded",
+          "followers",
+          "specialties",
+          "success"
+        ]
+      },
+      "display": {
+        "component": "table",
+        "properties": {}
+      }
+    }
+  }
+}
